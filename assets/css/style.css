@@ -1,186 +1,185 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearFixAfter::after {
-    content: "";
-    display: block;
-    clear: both;
+  clear: both;
+  content: "";
+  display: block;
 }
 
 body, html {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    font-size: 12pt;
-    height: 100%;
-    margin: 0;
+  color: #777777;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12pt;
+  height: 100%;
+  margin: 0;
 }
 
 .backgroundImage {
-    background-image: url("../images/bgGrayscale.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: auto;
+  background-attachment: fixed;
+  background-image: url(../images/bgGrayscale.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
 }
 
 header {
-    border-bottom: 3px solid #cccccc;
-    overflow: auto;
-    background: #ffffff;
+  background: #ffffff;
+  border-bottom: 3px solid #cccccc;
+  overflow: auto;
 }
 
 #headerBox {
-    width: 960px;
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 960px;
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
-    color: #ffffff;
-    background: #4aaaa5;
-    font-weight: bold;
-    font-size: 36px;
-    padding: 20px;
-    margin: 0;
-    float: left; 
+  background: #4aaaa5;
+  color: #ffffff;
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
 }
 
 h2 {
-    color: #4aaaa5;
-    background: #ffffff;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 0px 15px 15px 0px;
-    margin: 0;
+  background: #ffffff;
+  color: #4aaaa5;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px 15px 15px 0px;
 }
 
 nav {
-    position: relative;
-    top: 30px;
-    float: right;
+  float: right;
+  position: relative;
+  top: 30px;
 }
 
 li {
-    list-style-type: none;
-    display: inline-block;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .link {
-    padding: 10px;
-    font-weight: 700;
+  font-weight: 700;
+  padding: 10px;
 }
 
 .link:hover {
-    background: #DDDDDD;
-    color: #4aaaa5;
-    border-radius: 25px;
+  background: #DDDDDD;
+  border-radius: 25px;
+  color: #4aaaa5;
 }
 
 ul:hover > li {
-    color: #DDDDDD;
+  color: #DDDDDD;
 }
 
 a {
-    text-decoration: none;
-    color: inherit; /* #777777 from body */
+  color: inherit;
+  text-decoration: none;
 }
 
 main {
-    background: #ffffff;
-    position: relative;
-    top: 40px;
-    width: 960px;
-    margin: 0 auto;
-    padding: 30px;
-    
-    border: 3px solid #DDDDDD;
-    border-radius: 25px;
-    margin-bottom: 100px;
-    overflow: auto;
+  background: #ffffff;
+  border: 3px solid #DDDDDD;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  overflow: auto;
+  padding: 30px;
+  position: relative;
+  top: 40px;
+  width: 960px;
 }
 
 img {
-    width: 300px;
-    height: 200px;
+  height: 200px;
+  width: 300px;
 }
 
 #aboutMeIMG {
-    float: left;
-    width: 300px;
-    height: 360px;
-    margin: 20px 30px 10px 0px;
+  float: left;
+  height: 360px;
+  margin: 20px 30px 10px 0px;
+  width: 300px;
 }
 
 .portfolioIMG {
-    margin: 20px 40px 20px 0px;
-    position: relative;
-    float: left;
+  float: left;
+  margin: 20px 40px 20px 0px;
+  position: relative;
 }
 
 .imgOverlay {
-    position: absolute;
-    bottom: 15px;
-    color: #ffffff;
-    background: #4aaaa5;
-    width: 100%;
-    text-align: center;
-    padding: 15px;
+  background: #4aaaa5;
+  bottom: 15px;
+  color: #ffffff;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 p {
-    line-height: 150%;
-    margin-top: 22px;
+  line-height: 150%;
+  margin-top: 22px;
 }
 
 label {
-    line-height: 2.0;
+  line-height: 2.0;
 }
 
 input {
-    width: 100%;
-    height: 30px;
-    padding-left: 10px;
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 textarea {
-    width: 100%;
-    height: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
 }
 
-::placeholder {
-    color: #CCCCCC;
+::placeholder, .placeholderBio {
+  color: #CCCCCC;
 }
 
 #submitBTN {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12pt;
-    color: #ffffff;
-    background: #4aaaa5;
-    border: none;
-    width: 120px;
-    height: 40px;
+  background: #4aaaa5;
+  border: none;
+  color: #ffffff;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12pt;
+  height: 40px;
+  width: 120px;
 }
 
 footer {
-    border-top: 8px solid #4aaaa5;
-    background: #666666;
-    height: 60px;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  bottom: 0;
+  height: 60px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
 #copyRight {
-    position: relative;
-    top: 15px;
-    color: #cccccc;
+  color: #cccccc;
+  position: relative;
+  top: 15px;
 }
